@@ -1,0 +1,22 @@
+{
+    "postgres":{
+        "name":"test-postgres",
+        "host":"localhost",
+        "port":"5433",
+        "containerPort":"5432",
+        "image":"postgres:alpine",
+        "env":{
+            "POSTGRES_USER":"test",
+            "POSTGRES_PASSWORD":"test",
+            "POSTGRES_DB":"test"
+        }
+    },
+    "redis":{
+        "name":"test-redis",
+        "host":"localhost",
+        "port":"6379",
+        "containerPort":"6379",
+        "image":"redis:latest"
+    }
+
+}
